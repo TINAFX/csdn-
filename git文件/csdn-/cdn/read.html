@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/read.css">
+	<script src="./js/vue.js"></script>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <div id="app">
+    	<div class="head clearfix">
+    		<div class="back"><</div>
+    		<div class="logo">
+    			<img src="./img/Q.png" alt="">
+    		</div>
+    		<div class="land">
+    			<p>登录</p>
+    		</div>
+    	</div>
+    	<div class="user clearfix">
+    		<div class="user-name">
+    			<a href="">
+    				<img src="./img/k.jpg" alt="">
+    				<span>{{blog_info.author_name}}</span>
+    			</a>
+    			<div class="icon">
+    				<p>关注</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="article">
+    		<h1 class="title">
+    		 {{blog_info.title}}
+    		</h1>
+    		<div class="info">
+    			<span>{{blog_info.content}}</span>
+    			<span class=time>{{blog_info.data}}</span>
+    			<span>阅读{{blog_info.read_num}}</span>
+    		</div>
+    		<div class="content" :class="all ? 'select':''">
+    			<div class="chat">
+    				<p><img src="./img/p" alt=""></p>
+    				<p class="chat-info">
+    					<span>硅谷Live/</span>
+    					<span>实地探访/</span>
+    					<span class="hot">热点探秘</span>
+    					<span>/深度探讨</span>
+    				</p>
+    			</div>
+    			<p class="people">人设崩塌</p>
+    			<p class="str">昨天（美国时间3月21日周三），足足五天后，小扎正式在他个人的脸书主页对 Facebook 近 5000 万用户数据被第三方软件泄漏的新闻进行回应，并接受了美国有线电视新闻网 CNN 采访，公开就此事道歉。道歉原话是：I'm really sorry that this happened（我很抱歉发生了这样的事情）。</p>
+    			<p>
+    				<img src="./img/d" alt="">
+    			</p>
+    			<p>
+    				<span>
+    				 美国时间3月17日起，多则揭露 Facebook 
+    				</span>
+    				<span class="about">
+    				 近 5000 万用户数据被泄漏
+    				</span>
+    				<span>的新闻迅速发酵。</span>
+    			</p>
+    			<p>
+    				简单说就是，Facebook 在 2013 年向第三方应用开放，一个由剑桥大学研究员 Aleksandr Kogan 创建的应用 Kogan，付费邀请用户进行测试，不过用户朋友数量必须大于185人。当时共有 27 万用户参与该测试。
+    			</p>
+    			<p>
+    				简单说就是，Facebook 在 2013 年向第三方应用开放，一个由剑桥大学研究员 Aleksandr Kogan 创建的应用 Kogan，付费邀请用户进行测试，不过用户朋友数量必须大于185人。当时共有 27 万用户参与该测试。
+    			</p>	
+    		</div>
+    		<div class="more" :class="isshow ? 'show':'hide' "@click="clickall">
+    				<a href="javascript:void(0)">阅读全文</a>
+    		</div>
+    	</div>
+        <div class="mored clearfix">
+            <a href="">
+                    <img src="./img/k.jpg" alt="">
+                    <span>{{blog_info.author_name}}</span>
+                    <p>
+                        <span>访问量59+</span>
+                        <span>原创59</span>
+                        <a href="" class="moredd">更多博主文章</a>
+                    </p>
+            </a>
+        </div>
+        <div class="reation clearfix">
+            <ul  class="clearfix">
+                <li v-for="item in related_blog" class="clearfix">
+                    <h2> {{item.title}}</h2>
+                    <div class="icond">
+                        <div class="reation-name">1111</div>
+                        <div class="read">{{item.read_num}}阅读</div>
+                        <div class="data">{{item.date}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="all clearfix">
+            <ul>
+                <li class="zan"><i></i><a href="">点赞</a></li>
+                <li class="comment"><i></i><a href="">评论</a></li>
+                <li class="collect"><i></i><a href="javascript:void(0)" @click="collect" ref="collect">收藏</a></li>
+            </ul>
+        </div>
+    </div>
+	<script src="./js/read.js"></script>
+</body>
+</html>

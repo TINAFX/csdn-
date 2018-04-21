@@ -1,0 +1,117 @@
+body,html{
+	font-size: 62.5%;
+}
+body,html,ul,li,p,h2,span,input{
+	padding: 0;
+	margin:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.top-content{
+	border: 1px solid #e9e9e9;
+	margin: 4.8rem;
+}
+.login {
+	padding: 1.8rem;
+	border-bottom: 1px solid #e9e9e9;
+}
+.login h2 {
+
+	font-size: 2rem;
+	color: #4d5e73;
+	font-weight: 500;
+}
+.name, .pass{
+	width: 16rem;
+	padding: 1rem;
+	display: block;
+	outline: none;
+	margin-bottom: 1.1rem;
+}
+.user {
+	margin-top: 1.8rem;
+}
+.check input {
+	display: inline-block;
+	border: 1px solid #ccc;
+	margin-right: 1rem;
+}
+.check span {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+	color: #4d5e73;
+	font-size: 1rem;
+	position: relative;
+	top: -0.2rem;
+
+}
+.forget {
+	float: right;
+}
+.land{
+	text-align: center;
+	border: solid 1px #c90000;
+	width: 100%;
+	color: #fff;
+	line-height: 4.4rem;
+	background: #c90a16;
+	margin-top: 1rem;
+	font-size:2rem;
+}
+.third {
+	padding: 1.8rem;
+}
+.third h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #4d5e73
+}
+.third>a {
+	margin-bottom: 2rem;
+	margin-top: 1.5rem;
+	display: inline-block;
+	background-image: url("../img/login-third-party-new.png");
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+}
+.qq{
+	background-position: 0 0
+}
+.sina {
+	background-position: -74px 0;
+}
+.baidu{
+	background-position: -112px 0;
+}
+.cc{
+	background-position: -150px 0;
+}
+.git{
+	background-position: -187px 0;
+}
+.third p{
+	margin-bottom: 1.8rem;
+	color: #888;
+}
+.sub {
+	border-top: 1px solid #e0e0e0;
+	overflow: hidden;
+	padding: 1.5rem 0;
+	width: 100%;
+}
+.sub ul li {
+	line-height: 2rem;
+	color: #666;
+	font-size: 1.4rem;
+	float: left;
+	padding: 0 7px 0 0;
+}
+.sub ul li a {
+	color: #666;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/first.css">
+	<script src="./js/vue.js"></script>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <div id="app">
+    	<div class="head clearfix ">
+    		<div class="tool">
+    			<ul>
+    				<li></li>
+    				<li></li>
+    				<li></li>
+    			</ul>
+    		</div>
+    		<div class="logo"><img src="./img/Q.png" alt=""></div>
+    		<div class="land"><p><a href="./land.html">登录</a></p></div>
+    	</div>
+    	<div class="tab-bar">
+    		<ul class=" clearfix">
+    			<li class="active"><a href="">推荐</a></li>
+    			<li><a href="">最新文章</a></li>
+    			<li><a href="">关注</a></li>
+    			<li><a href="">资讯</a></li>
+    			<li><a href="">人工智能</a></li>
+    			<li><a href="">云计算</a></li>
+    			<li><a href="">云计算</a></li>
+    			<li><a href="">云计算</a></li>
+    			<li><a href="">云计算</a></li>
+    			<li><a href="">云计算</a></li>
+    			<li><a href="">云计算</a></li>
+    		</ul>
+    		
+    	</div>
+    	<div class="tab-img">
+    			<img src="./img/b.jpg" alt="">
+    		</div>
+    	<div class="content">
+    		<ul>
+    			<li class="clearfix" v-for="item in
+                blog_lists">
+                  <a :href="'./read.html ?id='+item.id">
+    				<h2>{{item.title}}</h2>
+    				<div class="icon">
+    					<div class="tag">
+    						<a href="">{{item.classify_name}}</a>
+    					</div>
+    					<div class="user-name">
+    						<a href="">{{item.author_name}}</a>
+    					</div>
+    					<div class="read">{{item.read_num}}</div>
+    					<div class="data">{{item.data}}</div>
+    				</div>
+                  </a>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+	<script src="./js/first.js"></script>
+</body>
+</html>

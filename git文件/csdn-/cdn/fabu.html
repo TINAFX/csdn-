@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/fabu.css">
+	<script src="./js/vue.js"></script>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./ueditor/ueditor.config.js"></script>
+	<script src="./ueditor/ueditor.all.min.js"></script>
+	<script src="./ueditor/ueditor.parse.min.js"></script>
+</head>
+<body>
+    <div id="app">
+    	<div class="top clearfix">
+    		<div class="logo">
+    			<img src="./img/q.png" alt="">
+    			<span>创作中心</span>
+    		</div>
+    		<div class="info">
+    		    <p>写博客</p>
+    			<img src="./img/k.jpg" alt="">
+    			<span class="name">xinxin</span>
+    			<span class="exit">退出</span>
+    		</div>
+    	</div>
+    	<div class="contentd clearfix">
+    		<div class="left">
+    			<ul>
+    				<li><a href="">文章管理</a></li>
+    				<li><a href="">发布文章</a></li>
+    			</ul>
+    		</div>
+    		<div class="right">
+    			<div class="title">
+    				<input type="text" placeholder="输入标题" v-model="title">
+    				<script id="container" name="content" type="text/plain"></script>
+    				<select name="" id="" v-model="class_id">
+    					<option value="5">日记</option>
+    					<option value="4">其他</option>
+    				</select>
+    				<button @click="issue">发布</button>
+                    <button @click="editon">修改</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<script src="./js/fabu.js"></script>
+</body>
+</html>

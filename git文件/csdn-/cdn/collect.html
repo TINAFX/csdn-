@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<style></style>
+</head>
+<body>
+	<div id="app">
+		<div class="collect" v-for="item in blog_lists">
+			<h2>{{item.title}}</h2>
+            <p>
+            	<span>{{item.classify_name}}</span>
+            	<span>{{item.author_name}}</span>
+            	<span>阅读{{item.read_num}}</span>
+            	<span>{{item.date}}</span>
+            </p>
+		</div>
+	</div>
+	<script>
+function getQuery(){
+				var str = (window.location.search.length > 0 ?window.location.search.substring(1) : ''),
+
+				args = {},
+				items = str.length ? str.split("&") : [],
+				item = null,
+				name = null,
+				value = null;
+				for (i=0; i < items.length; i++){
+					item = items[i].split("=");
+					name = decodeURIComponent(item[0]);
+					value = decodeURIComponent(item[1]);
+					if (name.length) {
+						args[name] = value;
+					}
+				}
+				console.log(window.location.search),
+				console.log(items)
+				return args;
+			}
+	  var collect=new Vue({
+	  	el:"#app",
+	  	data:{blog_lists:[],
+	  	},
+	  	mounted:function(){
+            this.getData()
+	  	},
+	  	methods:{
+	  		getData:function(){
+	  			var nowId=getQuery().id
+	  			var that=this
+	  			var userId=localStorage.getItem("user_id")
+	  			var classify_id=localStorage.getItem("classify_id")
+	  			$.ajax({
+	  				url:"http://blog.com/api/collect/lists",
+	  				type:"post",
+	  				dataType:"json",
+	  				data:{
+	  					
+	  					user_id:userId
+	  				},
+	  				success:function(res){
+                       that.blog_lists=res.data.blog_lists
+
+	  				}
+	  			})
+	  		}
+	  	}
+	  })
+	</script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+body,html {
+	font-size: 62.5%
+}
+body,html,ul li,p,h2,h1{
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix::after {
+	clear: both;
+	content: "";
+	height: 0;
+	display: block;
+}
+.head {
+	border: 2px solid #f5f5f5;
+	padding: 1rem;
+	position: relative;
+}
+.head>div {
+	float: left;
+}
+.back {
+	font-size: 2rem;
+	font-weight: bold;
+	color:#4f4f4f;
+}
+.logo img {
+	position: absolute;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 12rem;
+    height: 3rem;
+}
+.land {
+	position: absolute;
+	right: 1rem;
+	font-size: 2rem;
+	color: #c92027
+}
+.user {
+	border-bottom: 1px solid #ddd;
+	margin:  0 1rem;
+	padding: 1rem 0;
+}
+.user-name a img, .mored a img{
+   display: inline-block;
+   border-radius: 100%;
+   width: 3rem;
+   height: 3rem;
+  /* position: relative;
+   top: 0.8rem;*/
+}
+.mored a img{
+	margin-left: 1rem;
+}
+.user-name a   {
+	display: inline-block;
+	float: left;
+}
+.mored {
+	border: 1px solid #ddd;
+	margin:2rem 1rem;
+	padding: 1rem;
+}
+.mored a{
+	display: inline-block;
+}
+.mored a span{
+	margin-top: 2rem;
+	margin-left: 1rem
+}
+.moredd {
+	display: inline-block;
+	float: right;
+	margin-top: 1rem;
+}
+.user-name a span, .mored a span {
+	position: relative;
+	top: -0.8rem;
+	display: inline-block;
+	color: #4f4f4f;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.icon{
+	width: 5rem;
+	height: 3rem;
+	text-align: center;
+	background: #c92027;
+	border-radius: 5px;
+	float: right;
+	line-height: 3rem;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.article {
+    position: relative;
+	margin:0 1rem;
+	padding: 1rem 0;
+}
+.title {
+	font-size: 2rem;
+	color: #333;
+	font-weight: 700;
+}
+.info {
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #ddd;
+}
+.info span {
+
+	color: #999;
+	font-size: 1.4rem;
+}
+.time {
+	margin:0 1rem 0 1rem;
+	display: inline-block;
+}
+.content {
+	position: relative;
+	height: 1100px;
+	overflow:hidden;
+	padding-top: 5rem;
+}
+.content.select {
+	overflow:hidden;
+	height: 100%;
+}
+.chat p img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.chat-info {
+	font-size: 1.4rem;
+	color:rgb(127,127,127);
+	text-align: center;
+}
+.chat-info .hot {
+	display: inline-block;
+	color: rgb(0,176,240);
+}
+.people {
+	font-size: 1.8rem;
+	color: rgb(0,176,240);
+}
+/*.str {
+	font-size: 1.4rem;
+	line-height: 3rem;
+	color: #4f4f4f;
+	text-align:justify;
+}*/
+.content p {
+	font-size: 1.4rem;
+	margin: 4rem 0;
+	line-height: 3rem;
+	color: #4f4f4f;
+	text-align:justify;
+}
+.content p img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.content p .about {
+	color: rgb(0,176,240);
+}
+.more{
+	margin-top: 5rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+.more a {
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #ca0c16;
+	width: 15.8rem;
+	height: 4.8rem;
+	line-height: 4.8rem;
+	font-size: 1.8rem;
+	color: #ca0c16;
+}
+.show {
+	display: block;
+}
+.hide{
+	display: none;
+}
+.reation {
+	position: relative;
+	left:-2rem;
+	margin-bottom: 3rem;
+}
+.reation ul li {
+	padding: 1rem 0 ;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.icond>div {
+	float: left;
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+.all{
+	margin-top: 3rem;
+	position: fixed;
+	bottom:0;
+	background: #ddd;
+	width: 100%;
+	padding: 1rem 0;
+
+}
+.all ul li {
+	width: 33%;
+	text-align: center;
+	float: left;
+}
