@@ -29,7 +29,10 @@ var fubu=new Vue({
 	},
 	mounted:function(){
 		var ue = UE.getEditor('container');
-        this.getData()
+		if(getquery().id){
+		 this.getData()
+		}
+       
 	},
 
 	methods:{
