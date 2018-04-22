@@ -52,7 +52,10 @@ var fubu=new Vue({
                         // that.classify_List=res.data.classify_List,
                         // that.my_blog_info=res.data.my_blog_info;
                         that.title=res.data.my_blog_info.title;
-                        that.classify_id=res.data.my_blog_info.classify_id
+                        that.classify_id=res.data.my_blog_info.classify_id;
+			setimeout(function(){
+				UE.getEditor('container').setContent(res.data.my_blog_info.content);
+			},1000)
                     
                 }
              })
