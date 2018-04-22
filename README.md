@@ -1,9 +1,9 @@
 # csdn-
-##整个csdn博客的项目是用Vue设计的
-##用ajax调用接口
-##用vue进行数据渲染页面
-##通过地址栏传递参数id，参数id是通过函数 getquery获取得到 其具体实现：
--function getQuery(){
+**整个csdn博客的项目是用Vue设计的 **
+**用ajax调用接口**
+**用vue进行数据渲染页面**
+**通过地址栏传递参数id，参数id是通过函数 getquery获取得到 其具体实现：**
+function getQuery(){
 				var str = (window.location.search.length > 0 ?window.location.search.substring(1) : ''),
 
 				args = {},
@@ -97,12 +97,14 @@
 
  **请求方式：**
 - get
- 	|参数名|必选|类型|说明|
+**参数：**
+
+|参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |user_id |是  |int |当前登陆用户id|
 |blog_id |否 |int |更新blog的id|
-  **返回示例** //如果有blog_id才有my_blog_info否则只有classify_lists
- 	``` 
+**返回示例** 
+ ``` 
   {
     "error_code": 0,
     "message": "success",
@@ -126,9 +128,7 @@
     }
   }
 ```
-
-
-## 更新
+## 个人中心
 更新按钮接口
 
 **请求URL：** 
